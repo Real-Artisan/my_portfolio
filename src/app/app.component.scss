@@ -1,8 +1,46 @@
+.name, .role {
+    text-align: center;
+    margin-top: 20px;
+}
+.social {
+    display: grid;
+    margin-top: 20px;
+    .vg {
+        display: flex;
+        margin: auto;
+        svg {
+            margin: auto;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+}
+h3 {
+    font-size: 25px;
+    margin: 20px 20px;
+}
+
+.lottie {
+    img {
+        width: 100%;
+    }
+    p {
+        font-size: 20px;
+        margin: 20px 20px;
+    }
+}
+
 .projects {
     width: 100%;
     .project {
         width: 100%;
         margin: 50px 25px;
+        .intro {
+            .head {
+                font-weight: bold;
+                font-size: 35px;
+            }
+        }
         .images {
             img {
                 width: 380px;
