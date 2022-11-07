@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "daniel-stacks": {
+      "hosting": {
+        "my_portfolio": [
+          "daniel-stacks"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "daniel-stacks"
+  }
+}
