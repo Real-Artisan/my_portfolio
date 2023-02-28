@@ -5,16 +5,13 @@ jobs:
   build:
     docker:
       - image: cimg/node:16.13.1-browsers
-    working_directory: ~/dist/my_portfolio
     steps:
-      - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
+      - checkout
       - run:
           command: |
             google-chrome --version
             chromedriver --version
           name: Check install
-      - checkout
       - restore_cache:
           key: ng-project-{{ .Branch }}-{{ checksum "package-lock.json" }}
       - run: npm install
@@ -29,3 +26,8 @@ jobs:
       - run:
           name: "Deploy app to Firebase Hosting"
           command: "./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN"
+
+workflows:
+  build:
+    jobs:
+      - build
