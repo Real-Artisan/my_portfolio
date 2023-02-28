@@ -3,7 +3,6 @@ orbs:
   browser-tools: circleci/browser-tools@1.4.0
 jobs:
   build:
-    working_directory: ~/my_portfolio
     docker:
       - image: cimg/node:16.13.1-browsers
     steps:
