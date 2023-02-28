@@ -1,3 +1,3 @@
 # My Portfolio
 
-Software Engineer portfilio with CI/CD pipelin using circleci and firebase hosting.
+Software Engineer portfolio with CI/CD pipelin using circleci and firebase hosting.
