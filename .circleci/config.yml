@@ -7,11 +7,6 @@ jobs:
       - image: cimg/node:16.13.1-browsers
     steps:
       - checkout
-      - run:
-          command: |
-            google-chrome --version
-            chromedriver --version
-          name: Check install
       - restore_cache:
           key: ng-project-{{ .Branch }}-{{ checksum "package-lock.json" }}
       - run: npm install
