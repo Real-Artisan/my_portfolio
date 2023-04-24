@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my_portfolio';
+// I also come here when i am bored or need to keep the world green
 }
