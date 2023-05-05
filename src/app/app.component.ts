@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my_portfolio';
+//this ability to edit is saving lives 
 // I also come here when i am bored or need to keep the world green...
 }
