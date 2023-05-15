@@ -13,6 +13,7 @@ declare const require: {
     keys(): string[];
   };
 };
+//access to zoom
 
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
